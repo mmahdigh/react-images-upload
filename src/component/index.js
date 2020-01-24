@@ -42,6 +42,7 @@ class ReactImageUploadComponent extends React.Component {
    */
   componentWillReceiveProps(nextProps){
     if(nextProps.defaultImages !== this.props.defaultImages){
+      console.log("reached here");
       this.setState({pictures: nextProps.defaultImages});
     }
   }
